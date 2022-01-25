@@ -55,6 +55,8 @@ func IntComparator(a, b interface{}) int {
 	}
 }
 
+var IntComparator2 = Comparator(IntComparator)
+
 // Int8Comparator provides a basic comparison on int8
 func Int8Comparator(a, b interface{}) int {
 	aAsserted := a.(int8)
@@ -68,6 +70,8 @@ func Int8Comparator(a, b interface{}) int {
 		return 0
 	}
 }
+
+var Int8Comparator2 = Comparator(Int8Comparator)
 
 // Int16Comparator provides a basic comparison on int16
 func Int16Comparator(a, b interface{}) int {
@@ -83,6 +87,8 @@ func Int16Comparator(a, b interface{}) int {
 	}
 }
 
+var Int16Comparator2 = Comparator(Int16Comparator)
+
 // Int32Comparator provides a basic comparison on int32
 func Int32Comparator(a, b interface{}) int {
 	aAsserted := a.(int32)
@@ -96,6 +102,8 @@ func Int32Comparator(a, b interface{}) int {
 		return 0
 	}
 }
+
+var Int32Comparator2 = Comparator(Int32Comparator)
 
 // Int64Comparator provides a basic comparison on int64
 func Int64Comparator(a, b interface{}) int {
@@ -111,6 +119,8 @@ func Int64Comparator(a, b interface{}) int {
 	}
 }
 
+var Int64Comparator2 = Comparator(Int64Comparator)
+
 // UIntComparator provides a basic comparison on uint
 func UIntComparator(a, b interface{}) int {
 	aAsserted := a.(uint)
@@ -124,6 +134,8 @@ func UIntComparator(a, b interface{}) int {
 		return 0
 	}
 }
+
+var UIntComparator2 = Comparator(UIntComparator)
 
 // UInt8Comparator provides a basic comparison on uint8
 func UInt8Comparator(a, b interface{}) int {
@@ -139,6 +151,8 @@ func UInt8Comparator(a, b interface{}) int {
 	}
 }
 
+var UInt8Comparator2 = Comparator(UInt8Comparator)
+
 // UInt16Comparator provides a basic comparison on uint16
 func UInt16Comparator(a, b interface{}) int {
 	aAsserted := a.(uint16)
@@ -152,6 +166,8 @@ func UInt16Comparator(a, b interface{}) int {
 		return 0
 	}
 }
+
+var UInt16Comparator2 = Comparator(UInt16Comparator)
 
 // UInt32Comparator provides a basic comparison on uint32
 func UInt32Comparator(a, b interface{}) int {
@@ -167,6 +183,8 @@ func UInt32Comparator(a, b interface{}) int {
 	}
 }
 
+var UInt32Comparator2 = Comparator(UInt32Comparator)
+
 // UInt64Comparator provides a basic comparison on uint64
 func UInt64Comparator(a, b interface{}) int {
 	aAsserted := a.(uint64)
@@ -180,6 +198,8 @@ func UInt64Comparator(a, b interface{}) int {
 		return 0
 	}
 }
+
+var UInt64Comparator2 = Comparator(UInt64Comparator)
 
 // Float32Comparator provides a basic comparison on float32
 func Float32Comparator(a, b interface{}) int {
@@ -195,6 +215,8 @@ func Float32Comparator(a, b interface{}) int {
 	}
 }
 
+var Float32Comparator2 = Comparator(Float32Comparator)
+
 // Float64Comparator provides a basic comparison on float64
 func Float64Comparator(a, b interface{}) int {
 	aAsserted := a.(float64)
@@ -208,6 +230,8 @@ func Float64Comparator(a, b interface{}) int {
 		return 0
 	}
 }
+
+var Float64Comparator2 = Comparator(Float64Comparator)
 
 // ByteComparator provides a basic comparison on byte
 func ByteComparator(a, b interface{}) int {
@@ -223,6 +247,8 @@ func ByteComparator(a, b interface{}) int {
 	}
 }
 
+var ByteComparator2 = Comparator(ByteComparator)
+
 // RuneComparator provides a basic comparison on rune
 func RuneComparator(a, b interface{}) int {
 	aAsserted := a.(rune)
@@ -236,6 +262,8 @@ func RuneComparator(a, b interface{}) int {
 		return 0
 	}
 }
+
+var RuneComparator2 = Comparator(RuneComparator)
 
 // TimeComparator provides a basic comparison on time.Time
 func TimeComparator(a, b interface{}) int {
@@ -251,3 +279,5 @@ func TimeComparator(a, b interface{}) int {
 		return 0
 	}
 }
+
+var TimeComparator2 = Comparator(TimeComparator)
