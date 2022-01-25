@@ -13,6 +13,10 @@ func Sort(values []interface{}, comparator Comparator) {
 	sort.Sort(sortable{values, comparator})
 }
 
+func Sort2(values []interface{}, comparator func(interface{}, interface{}) int) {
+	sort.Sort(sortable{values, comparator})
+}
+
 type sortable struct {
 	values     []interface{}
 	comparator Comparator

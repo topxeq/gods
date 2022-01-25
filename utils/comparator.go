@@ -39,6 +39,8 @@ func StringComparator(a, b interface{}) int {
 	return 0
 }
 
+var StringComparator2 = Comparator(StringComparator)
+
 // IntComparator provides a basic comparison on int
 func IntComparator(a, b interface{}) int {
 	aAsserted := a.(int)
